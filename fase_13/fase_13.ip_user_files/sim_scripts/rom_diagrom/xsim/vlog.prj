@@ -1,0 +1,7 @@
+verilog xil_defaultlib -i "../../../../../../../../../run/media/luis/WNFN/fpga2/2025.2.1/data/rsb/busdef" \
+"../../../../fase_12.gen/sources_1/ip/rom_diagrom/sim/rom_diagrom.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,28 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.gen/sources_1/ip/rom_diagrom/sim/rom_diagrom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_diagrom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.srcs/sources_1/new/fx68k.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fx68k
+INFO: [VRFC 10-311] analyzing module nDecoder3
+INFO: [VRFC 10-311] analyzing module irdDecode
+INFO: [VRFC 10-311] analyzing module excUnit
+INFO: [VRFC 10-311] analyzing module dataIo
+INFO: [VRFC 10-311] analyzing module uaddrDecode
+INFO: [VRFC 10-311] analyzing module onehotEncoder4
+INFO: [VRFC 10-311] analyzing module pren
+INFO: [VRFC 10-311] analyzing module sequencer
+INFO: [VRFC 10-311] analyzing module busArbiter
+INFO: [VRFC 10-311] analyzing module busControl
+INFO: [VRFC 10-311] analyzing module uRom
+INFO: [VRFC 10-311] analyzing module nanoRom
+INFO: [VRFC 10-311] analyzing module microToNanoAddr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.srcs/sources_1/new/fx68kAlu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fx68kAlu
+INFO: [VRFC 10-311] analyzing module aluCorf
+INFO: [VRFC 10-311] analyzing module aluShifter
+INFO: [VRFC 10-311] analyzing module aluGetOp
+INFO: [VRFC 10-311] analyzing module rowDecoder
+INFO: [VRFC 10-311] analyzing module ccrTable
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.srcs/sources_1/new/uaddrPla.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pla_lined
+INFO: [VRFC 10-2263] Analyzing Verilog file "/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

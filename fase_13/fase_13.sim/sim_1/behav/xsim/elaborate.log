@@ -1,0 +1,55 @@
+Vivado Simulator v2025.2.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /run/media/luis/WNFN/fpga2/2025.2.1/Vivado/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L blk_mem_gen_v8_4_12 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot phase11_top_behav xil_defaultlib.phase11_top xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling package xil_defaultlib.$unit_fx68k_sv_940741627
+Compiling module xil_defaultlib.glbl
+Compiling module xil_defaultlib.microToNanoAddr
+Compiling module xil_defaultlib.nanoRom
+Compiling module xil_defaultlib.uRom
+Compiling module xil_defaultlib.onehotEncoder4
+Compiling module xil_defaultlib.pla_lined
+Compiling module xil_defaultlib.uaddrDecode
+Compiling module xil_defaultlib.sequencer
+Compiling module xil_defaultlib.pren
+Compiling module xil_defaultlib.dataIo
+Compiling module xil_defaultlib.rowDecoder
+Compiling module xil_defaultlib.aluGetOp
+Compiling module xil_defaultlib.ccrTable
+Compiling module xil_defaultlib.aluShifter
+Compiling module xil_defaultlib.aluCorf
+Compiling module xil_defaultlib.fx68kAlu
+Compiling module xil_defaultlib.excUnit
+Compiling module xil_defaultlib.nDecoder3
+Compiling module xil_defaultlib.irdDecode
+Compiling module xil_defaultlib.busControl
+Compiling module xil_defaultlib.busArbiter
+Compiling module xil_defaultlib.fx68k
+Compiling architecture behavioral of entity xil_defaultlib.FX68K_Wrapper [fx68k_wrapper_default]
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_softecc_outp...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_mem_module(C...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12(C_FAMILY="ar...
+Compiling module xil_defaultlib.rom_diagrom
+Compiling architecture rtl of entity xil_defaultlib.bus_controller [bus_controller_default]
+Compiling architecture rtl of entity xil_defaultlib.uart_rx [uart_rx_default]
+Compiling architecture rtl of entity xil_defaultlib.keyboard_uart [keyboard_uart_default]
+Compiling architecture behavioral of entity xil_defaultlib.Amiga_CIA [amiga_cia_default]
+Compiling architecture rtl of entity xil_defaultlib.chipset_stub [chipset_stub_default]
+Compiling architecture rtl of entity xil_defaultlib.uart_tx [uart_tx_default]
+Compiling architecture rtl of entity xil_defaultlib.serdat_uart [\serdat_uart(clk_hz=50000000)\]
+Compiling architecture rtl of entity xil_defaultlib.bus_spy [bus_spy_default]
+Compiling architecture rtl of entity xil_defaultlib.phase11_top
+Built simulation snapshot phase11_top_behav

@@ -1,0 +1,22 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.srcs/sources_1/new/Amiga_CIA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Amiga_CIA'
+INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.srcs/sources_1/new/bus_controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bus_controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.srcs/sources_1/new/bus_spy.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bus_spy'
+INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.srcs/sources_1/new/chipset_stub.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'chipset_stub'
+INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.srcs/sources_1/new/uart_tx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart_tx'
+INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.srcs/sources_1/new/fx68k_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FX68K_Wrapper'
+WARNING: [VRFC 10-3093] actual for formal port '\extReset\' is neither a static name nor a globally static expression [/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.srcs/sources_1/new/fx68k_wrapper.vhd:43]
+WARNING: [VRFC 10-3093] actual for formal port '\pwrUp\' is neither a static name nor a globally static expression [/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.srcs/sources_1/new/fx68k_wrapper.vhd:44]
+INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.srcs/sources_1/new/keyboard_uart.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'keyboard_uart'
+INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.srcs/sources_1/new/serdat_uart.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'serdat_uart'
+INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.srcs/sources_1/new/uart_rx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart_rx'
+INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.srcs/sources_1/new/phase11_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'phase11_top'

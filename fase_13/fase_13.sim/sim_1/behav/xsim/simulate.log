@@ -1,0 +1,15 @@
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module phase11_top.inst_rom.inst.native_mem_module.blk_mem_gen_v8_4_12_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WARNING: 0ns : none of the conditions were true for unique case from File:/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.srcs/sources_1/new/uaddrPla.sv:125
+WARNING: 0ns : none of the conditions were true for unique case from File:/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.srcs/sources_1/new/uaddrPla.sv:1365
+WARNING: 0ns : none of the conditions were true for unique case from File:/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.srcs/sources_1/new/uaddrPla.sv:1483
+WARNING: 0ns : none of the conditions were true for unique case from File:/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.srcs/sources_1/new/uaddrPla.sv:1625
+WARNING: 0ns : none of the conditions were true for unique case from File:/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.srcs/sources_1/new/uaddrPla.sv:1767
+WARNING: 0ns : none of the conditions were true for unique case from File:/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.srcs/sources_1/new/uaddrPla.sv:1909
+WARNING: 0ns : none of the conditions were true for unique case from File:/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.srcs/sources_1/new/uaddrPla.sv:2051
+WARNING: 0ns : none of the conditions were true for unique case from File:/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.srcs/sources_1/new/fx68k.sv:2079
+WARNING: 0ns : none of the conditions were true for unique case from File:/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.srcs/sources_1/new/fx68kAlu.sv:537
+WARNING: 0ns : none of the conditions were true for unique case from File:/run/media/luis/WNFN/Proyectos_Programacion/XC7A200T/Amiga500V2/fase_11/fase_11.srcs/sources_1/new/fx68kAlu.sv:313
+INFO: xsimkernel Simulation Memory Usage: 523436 KB (Peak: 563804 KB), Simulation CPU Usage: 660 ms

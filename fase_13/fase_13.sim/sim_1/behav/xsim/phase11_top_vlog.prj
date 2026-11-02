@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../fpga2/2025.2.1/data/rsb/busdef" \
+"../../../../fase_11.gen/sources_1/ip/rom_diagrom/sim/rom_diagrom.v" \
+
+sv xil_defaultlib  --include "../../../../../../../../fpga2/2025.2.1/data/rsb/busdef" \
+"../../../../fase_11.srcs/sources_1/new/fx68k.sv" \
+"../../../../fase_11.srcs/sources_1/new/fx68kAlu.sv" \
+"../../../../fase_11.srcs/sources_1/new/uaddrPla.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../fase_11.srcs/sources_1/new/Amiga_CIA.vhd" \
+"../../../../fase_11.srcs/sources_1/new/bus_controller.vhd" \
+"../../../../fase_11.srcs/sources_1/new/bus_spy.vhd" \
+"../../../../fase_11.srcs/sources_1/new/chipset_stub.vhd" \
+"../../../../fase_11.srcs/sources_1/new/uart_tx.vhd" \
+"../../../../fase_11.srcs/sources_1/new/fx68k_wrapper.vhd" \
+"../../../../fase_11.srcs/sources_1/new/keyboard_uart.vhd" \
+"../../../../fase_11.srcs/sources_1/new/serdat_uart.vhd" \
+"../../../../fase_11.srcs/sources_1/new/uart_rx.vhd" \
+"../../../../fase_11.srcs/sources_1/new/phase11_top.vhd" \
+
+# Do not sort compile order
+nosort

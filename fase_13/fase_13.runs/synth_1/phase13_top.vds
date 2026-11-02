@@ -1,0 +1,1361 @@
+#-----------------------------------------------------------
+# Vivado v2025.2.1 (64-bit)
+# SW Build 6403652 on Thu Mar 19 13:47:00 MDT 2026
+# IP Build 6403511 on Thu Mar 19 12:41:45 MDT 2026
+# SharedData Build 6403650 on Thu Mar 19 14:02:13 MDT 2026
+# Start of session at: Mon Nov  2 21:10:57 2026
+# Process ID         : 151955
+# Current directory  : /home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.runs/synth_1
+# Command line       : vivado -log phase13_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source phase13_top.tcl
+# Log file           : /home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.runs/synth_1/phase13_top.vds
+# Journal file       : /home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.runs/synth_1/vivado.jou
+# Running On         : fedora
+# Platform           : Fedora
+# Operating System   : Fedora Linux 44 (KDE Plasma Desktop Edition)
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13700K
+# CPU Frequency      : 5300.000 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 24
+# Host memory        : 33361 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 41951 MB
+# Available Virtual  : 33835 MB
+#-----------------------------------------------------------
+source phase13_top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/utils_1/imports/synth_1/phase04_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/utils_1/imports/synth_1/phase04_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top phase13_top -part xc7a200tfbg484-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg484-3
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 152064
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2482.383 ; gain = 482.188 ; free physical = 2943 ; free virtual = 30864
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-9112] actual for formal port 'wr_en' is neither a static name nor a globally static expression [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:1230]
+WARNING: [Synth 8-9112] actual for formal port 'wr_byte' is neither a static name nor a globally static expression [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:1231]
+INFO: [Synth 8-638] synthesizing module 'phase13_top' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.runs/synth_1/.Xil/Vivado-151955-fedora/realtime/clk_wiz_0_stub.vhdl:19]
+INFO: [Synth 8-226] default block is never used [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:461]
+INFO: [Synth 8-638] synthesizing module 'rom_diagrom' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.runs/synth_1/.Xil/Vivado-151955-fedora/realtime/rom_diagrom_stub.vhdl:21]
+INFO: [Synth 8-638] synthesizing module 'Amiga_CIA' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/Amiga_CIA.vhd:90]
+	Parameter CLK_HZ bound to: 28375000 - type: integer 
+	Parameter TOD_HSYNC bound to: 0 - type: bool 
+INFO: [Synth 8-226] default block is never used [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/Amiga_CIA.vhd:275]
+INFO: [Synth 8-226] default block is never used [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/Amiga_CIA.vhd:344]
+INFO: [Synth 8-256] done synthesizing module 'Amiga_CIA' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/Amiga_CIA.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'Amiga_CIA__parameterized0' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/Amiga_CIA.vhd:90]
+	Parameter CLK_HZ bound to: 28375000 - type: integer 
+	Parameter TOD_HSYNC bound to: 1 - type: bool 
+INFO: [Synth 8-226] default block is never used [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/Amiga_CIA.vhd:275]
+INFO: [Synth 8-226] default block is never used [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/Amiga_CIA.vhd:344]
+INFO: [Synth 8-256] done synthesizing module 'Amiga_CIA__parameterized0' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/Amiga_CIA.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'ram_chip' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.runs/synth_1/.Xil/Vivado-151955-fedora/realtime/ram_chip_stub.vhdl:28]
+INFO: [Synth 8-638] synthesizing module 'FX68K_Wrapper' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k_wrapper.vhd:32]
+INFO: [Synth 8-6157] synthesizing module 'fx68k' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:136]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:189]
+INFO: [Synth 8-6157] synthesizing module 'microToNanoAddr' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:2493]
+INFO: [Synth 8-6155] done synthesizing module 'microToNanoAddr' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:2493]
+INFO: [Synth 8-6157] synthesizing module 'nanoRom' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:2482]
+INFO: [Synth 8-3876] $readmem data file 'nanorom.mem' is read successfully [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:2485]
+INFO: [Synth 8-6155] done synthesizing module 'nanoRom' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:2482]
+INFO: [Synth 8-6157] synthesizing module 'uRom' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:2471]
+INFO: [Synth 8-3876] $readmem data file 'microrom.mem' is read successfully [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:2474]
+INFO: [Synth 8-6155] done synthesizing module 'uRom' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:2471]
+INFO: [Synth 8-6157] synthesizing module 'uaddrDecode' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:1804]
+INFO: [Synth 8-6157] synthesizing module 'onehotEncoder4' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:1889]
+INFO: [Synth 8-6155] done synthesizing module 'onehotEncoder4' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:1889]
+INFO: [Synth 8-6157] synthesizing module 'pla_lined' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:41]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:111]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:125]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:178]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:196]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:214]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:232]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:250]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:268]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:286]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:304]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:322]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:340]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:358]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:376]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:394]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:412]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:430]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:448]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:466]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:484]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:502]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:520]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:548]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:566]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:584]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:602]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:620]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:638]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:656]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:674]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:692]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:710]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:728]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:746]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:764]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:782]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:800]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:818]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:836]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:854]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:872]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:902]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:905]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:922]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:939]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:956]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:973]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:990]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1007]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1024]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1045]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1048]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1065]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1082]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1099]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1116]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1133]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1150]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1167]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1184]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1205]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1208]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1225]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1242]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1259]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1276]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1293]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1310]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1327]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1344]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1365]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1368]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1382]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1396]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1410]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1424]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1438]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1452]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1466]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1483]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1486]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1503]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1520]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1537]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1554]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1571]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1588]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1605]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1625]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1628]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1645]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1662]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1679]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1696]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1713]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1730]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1747]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1767]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1770]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:1787]
+INFO: [Common 17-14] Message 'Synth 8-294' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'pla_lined' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uaddrPla.sv:41]
+INFO: [Synth 8-6155] done synthesizing module 'uaddrDecode' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:1804]
+INFO: [Synth 8-6157] synthesizing module 'sequencer' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:1940]
+INFO: [Synth 8-6155] done synthesizing module 'sequencer' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:1940]
+INFO: [Synth 8-6157] synthesizing module 'excUnit' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:1150]
+INFO: [Synth 8-226] default block is never used [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:1484]
+INFO: [Synth 8-6157] synthesizing module 'pren' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:1916]
+INFO: [Synth 8-6155] done synthesizing module 'pren' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:1916]
+INFO: [Synth 8-6157] synthesizing module 'dataIo' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:1704]
+INFO: [Synth 8-6155] done synthesizing module 'dataIo' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:1704]
+INFO: [Synth 8-6157] synthesizing module 'fx68kAlu' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68kAlu.sv:31]
+INFO: [Synth 8-6157] synthesizing module 'rowDecoder' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68kAlu.sv:624]
+INFO: [Synth 8-6155] done synthesizing module 'rowDecoder' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68kAlu.sv:624]
+INFO: [Synth 8-6157] synthesizing module 'aluGetOp' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68kAlu.sv:527]
+INFO: [Synth 8-6155] done synthesizing module 'aluGetOp' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68kAlu.sv:527]
+INFO: [Synth 8-6157] synthesizing module 'ccrTable' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68kAlu.sv:758]
+INFO: [Synth 8-6155] done synthesizing module 'ccrTable' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68kAlu.sv:758]
+INFO: [Synth 8-6157] synthesizing module 'aluShifter' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68kAlu.sv:492]
+INFO: [Synth 8-6155] done synthesizing module 'aluShifter' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68kAlu.sv:492]
+INFO: [Synth 8-6157] synthesizing module 'aluCorf' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68kAlu.sv:457]
+INFO: [Synth 8-6155] done synthesizing module 'aluCorf' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68kAlu.sv:457]
+INFO: [Synth 8-6155] done synthesizing module 'fx68kAlu' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68kAlu.sv:31]
+INFO: [Synth 8-6155] done synthesizing module 'excUnit' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:1150]
+INFO: [Synth 8-6157] synthesizing module 'nDecoder3' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:658]
+INFO: [Synth 8-6155] done synthesizing module 'nDecoder3' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:658]
+INFO: [Synth 8-6157] synthesizing module 'irdDecode' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:938]
+INFO: [Synth 8-6155] done synthesizing module 'irdDecode' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:938]
+INFO: [Synth 8-6157] synthesizing module 'busControl' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:2265]
+INFO: [Synth 8-6155] done synthesizing module 'busControl' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:2265]
+INFO: [Synth 8-6157] synthesizing module 'busArbiter' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:2181]
+INFO: [Synth 8-6155] done synthesizing module 'busArbiter' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:2181]
+INFO: [Synth 8-6155] done synthesizing module 'fx68k' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:136]
+INFO: [Synth 8-256] done synthesizing module 'FX68K_Wrapper' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k_wrapper.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'Amiga_Denise' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/ficheros/Amiga_Denise.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Amiga_Denise' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/ficheros/Amiga_Denise.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'Amiga_Blitter' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/ficheros/Amiga_Blitter.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'Amiga_Blitter' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/ficheros/Amiga_Blitter.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'Amiga_Copper' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/ficheros/Amiga_Copper.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'Amiga_Copper' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/ficheros/Amiga_Copper.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'video_subsystem' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/new/video_subsystem.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'TMDS_Encoder' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/new/TMDS_Encoder.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'TMDS_Encoder' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/new/TMDS_Encoder.vhd:30]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ODDR_inst' to cell 'ODDR' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/new/video_subsystem.vhd:170]
+INFO: [Synth 8-113] binding component instance 'OBUFDS_inst' to cell 'OBUFDS' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/new/video_subsystem.vhd:187]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ODDR_inst' to cell 'ODDR' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/new/video_subsystem.vhd:170]
+INFO: [Synth 8-113] binding component instance 'OBUFDS_inst' to cell 'OBUFDS' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/new/video_subsystem.vhd:187]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ODDR_inst' to cell 'ODDR' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/new/video_subsystem.vhd:170]
+INFO: [Synth 8-113] binding component instance 'OBUFDS_inst' to cell 'OBUFDS' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/new/video_subsystem.vhd:187]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ODDR_inst' to cell 'ODDR' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/new/video_subsystem.vhd:170]
+INFO: [Synth 8-113] binding component instance 'OBUFDS_inst' to cell 'OBUFDS' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/new/video_subsystem.vhd:187]
+INFO: [Synth 8-256] done synthesizing module 'video_subsystem' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/new/video_subsystem.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'bus_trace' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/bus_trace.vhd:52]
+	Parameter CLK_HZ bound to: 28375000 - type: integer 
+	Parameter BAUD bound to: 1000000 - type: integer 
+	Parameter DEPTH bound to: 16384 - type: integer 
+	Parameter CYCLES bound to: 28000000 - type: integer 
+	Parameter SKIP bound to: 2000000000 - type: integer 
+	Parameter SELFTEST bound to: 0 - type: bool 
+	Parameter LOADRAM bound to: 0 - type: bool 
+	Parameter LOAD_BASE bound to: 0 - type: integer 
+	Parameter LOAD_WORDS bound to: 262144 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bus_trace' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/bus_trace.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'serdat_uart' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/serdat_uart.vhd:38]
+	Parameter CLK_HZ bound to: 28375000 - type: integer 
+	Parameter BAUD bound to: 9600 - type: integer 
+	Parameter ADDR_BITS bound to: 11 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uart_tx.vhd:27]
+	Parameter CLK_HZ bound to: 28375000 - type: integer 
+	Parameter BAUD bound to: 9600 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uart_tx.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'serdat_uart' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/serdat_uart.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'keyboard_uart' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/keyboard_uart.vhd:22]
+	Parameter CLK_HZ bound to: 28375000 - type: integer 
+	Parameter BAUD bound to: 9600 - type: integer 
+	Parameter CLK_HZ bound to: 28375000 - type: integer 
+	Parameter BAUD bound to: 9600 - type: integer 
+INFO: [Synth 8-3491] module 'uart_rx' declared at '/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uart_rx.vhd:5' bound to instance 'inst_uart_rx' of component 'uart_rx' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/keyboard_uart.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uart_rx.vhd:19]
+	Parameter CLK_HZ bound to: 28375000 - type: integer 
+	Parameter BAUD bound to: 9600 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uart_rx.vhd:19]
+INFO: [Synth 8-226] default block is never used [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/keyboard_uart.vhd:98]
+INFO: [Synth 8-256] done synthesizing module 'keyboard_uart' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/keyboard_uart.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'floppy_subsystem' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/floppy_subsystem.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'uart_rx__parameterized0' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uart_rx.vhd:19]
+	Parameter CLK_HZ bound to: 28375000 - type: integer 
+	Parameter BAUD bound to: 1000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_rx__parameterized0' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uart_rx.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'uart_tx__parameterized0' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uart_tx.vhd:27]
+	Parameter CLK_HZ bound to: 28375000 - type: integer 
+	Parameter BAUD bound to: 1000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_tx__parameterized0' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/uart_tx.vhd:27]
+INFO: [Synth 8-6157] synthesizing module 'paula_floppy' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/paula_floppy.v:67]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/paula_floppy.v:264]
+INFO: [Synth 8-6157] synthesizing module 'paula_floppy_fifo' [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/paula_floppy_fifo.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'paula_floppy_fifo' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/paula_floppy_fifo.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'paula_floppy' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/paula_floppy.v:67]
+INFO: [Synth 8-256] done synthesizing module 'floppy_subsystem' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/floppy_subsystem.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'phase13_top' (0#1) [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:30]
+WARNING: [Synth 8-6014] Unused sequential element kbd_flag_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/Amiga_CIA.vhd:203]
+WARNING: [Synth 8-6014] Unused sequential element kbd_flag_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/Amiga_CIA.vhd:203]
+WARNING: [Synth 8-4767] Trying to implement RAM 'regs68L_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons. [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:1535]
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Invalid write to RAM. 
+	3: Invalid write to RAM. 
+	4: No valid clock found for write to RAM. 
+WARNING: [Synth 8-4767] Trying to implement RAM 'regs68H_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons. [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:1355]
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Invalid write to RAM. 
+	3: Invalid write to RAM. 
+	4: No valid clock found for write to RAM. 
+WARNING: [Synth 8-6014] Unused sequential element dataOe_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/fx68k.sv:2375]
+WARNING: [Synth 8-6014] Unused sequential element bpl1pth_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/ficheros/Amiga_Denise.vhd:141]
+WARNING: [Synth 8-6014] Unused sequential element bpl2pth_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/ficheros/Amiga_Denise.vhd:145]
+WARNING: [Synth 8-6014] Unused sequential element bpl2ptl_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/ficheros/Amiga_Denise.vhd:147]
+WARNING: [Synth 8-6014] Unused sequential element bpl3pth_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/ficheros/Amiga_Denise.vhd:149]
+WARNING: [Synth 8-6014] Unused sequential element bpl3ptl_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/ficheros/Amiga_Denise.vhd:151]
+WARNING: [Synth 8-6014] Unused sequential element bpl4pth_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/ficheros/Amiga_Denise.vhd:153]
+WARNING: [Synth 8-6014] Unused sequential element bpl4ptl_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/ficheros/Amiga_Denise.vhd:155]
+WARNING: [Synth 8-6014] Unused sequential element tick_cnt_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/ficheros/Amiga_Denise.vhd:181]
+WARNING: [Synth 8-6014] Unused sequential element ena_pixel_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/ficheros/Amiga_Denise.vhd:183]
+WARNING: [Synth 8-6014] Unused sequential element fetch_phase_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/ficheros/Amiga_Denise.vhd:221]
+WARNING: [Synth 8-6014] Unused sequential element pix_in_block_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/ficheros/Amiga_Denise.vhd:222]
+WARNING: [Synth 8-6014] Unused sequential element cop2lc_valid_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/ficheros/Amiga_Copper.vhd:186]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ram_dout_reg' and it is trimmed from '104' to '72' bits. [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/bus_trace.vhd:298]
+WARNING: [Synth 8-6014] Unused sequential element dma_cap_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/floppy_subsystem.vhd:556]
+WARNING: [Synth 8-4767] Trying to implement RAM 'br_buf_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons. [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/floppy_subsystem.vhd:479]
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Invalid write to RAM. 
+	3: No valid clock found for write to RAM. 
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_blitter'. This will prevent further optimization [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:1062]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_copper'. This will prevent further optimization [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:1082]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_ram'. This will prevent further optimization [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:1000]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_trace'. This will prevent further optimization [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:1193]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_denise'. This will prevent further optimization [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:1037]
+WARNING: [Synth 8-6014] Unused sequential element vblank_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:521]
+WARNING: [Synth 8-6014] Unused sequential element bfe001_rd_lat_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:576]
+WARNING: [Synth 8-6014] Unused sequential element cop1lc_wr_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:577]
+WARNING: [Synth 8-6014] Unused sequential element bpl_cop_cnt_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:583]
+WARNING: [Synth 8-6014] Unused sequential element bpl_cop_data_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:584]
+WARNING: [Synth 8-6014] Unused sequential element cop_move_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:579]
+WARNING: [Synth 8-6014] Unused sequential element cop_ir1_lat_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:581]
+WARNING: [Synth 8-6014] Unused sequential element cop_ir2_lat_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:582]
+WARNING: [Synth 8-6014] Unused sequential element dmacon_lat_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:573]
+WARNING: [Synth 8-6014] Unused sequential element rd_cnt_lat_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:571]
+WARNING: [Synth 8-6014] Unused sequential element intreq_lat_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:574]
+WARNING: [Synth 8-6014] Unused sequential element intena_lat_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:575]
+WARNING: [Synth 8-6014] Unused sequential element cop1lc_wr_lat_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:578]
+WARNING: [Synth 8-6014] Unused sequential element cop_move_lat_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:580]
+WARNING: [Synth 8-6014] Unused sequential element serdatr_rd_lat_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:1154]
+WARNING: [Synth 8-6014] Unused sequential element rd_cnt_reg was removed.  [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/phase13_top.vhd:613]
+WARNING: [Synth 8-7129] Port clk7n_en in module paula_floppy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdc_done in module paula_floppy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ciab_prb[6] in module floppy_subsystem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ciab_prb[5] in module floppy_subsystem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ciab_prb[4] in module floppy_subsystem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n_as in module bus_trace is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SerialClk in module TMDS_Encoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr[15] in module Amiga_Copper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr[14] in module Amiga_Copper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr[13] in module Amiga_Copper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr[12] in module Amiga_Copper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port h_cnt[31] in module Amiga_Copper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr[15] in module Amiga_Blitter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr[14] in module Amiga_Blitter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr[13] in module Amiga_Blitter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr[12] in module Amiga_Blitter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr[11] in module Amiga_Blitter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr[10] in module Amiga_Blitter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr[9] in module Amiga_Blitter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr[0] in module Amiga_Blitter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[15] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[14] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[13] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[12] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[11] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[10] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[9] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[0] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[31] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[30] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[29] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[28] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[27] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[26] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[25] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[24] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[23] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[22] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[21] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[20] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[19] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[18] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[17] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[16] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[15] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[14] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[13] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[12] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[11] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[10] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[9] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[8] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[7] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[6] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[5] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[4] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[3] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[2] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[1] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_cnt[0] in module Amiga_Denise is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clks[pwrUp] in module busArbiter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clks[extReset] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clks[pwrUp] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clks[enPhi1] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clks[enPhi2] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[implicitSp] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[toCcr] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[rxIsDt] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[ryIsDt] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[rxIsUsp] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[rxIsMovem] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[movemPreDecr] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[isByte] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[isMovep] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[rx][2] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[rx][1] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[rx][0] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[ry][2] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[ry][1] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[ry][0] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[rxIsAreg] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[ryIsAreg] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[ftuConst][15] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[ftuConst][14] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[ftuConst][13] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[ftuConst][12] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[ftuConst][11] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[ftuConst][10] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[ftuConst][9] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[ftuConst][8] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[ftuConst][7] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[ftuConst][6] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[ftuConst][5] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[ftuConst][4] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[ftuConst][3] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[ftuConst][2] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[ftuConst][1] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[ftuConst][0] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[macroTvn][5] in module nDecoder3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Irdecod[macroTvn][4] in module nDecoder3 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2751.016 ; gain = 750.820 ; free physical = 2700 ; free virtual = 30625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2751.016 ; gain = 750.820 ; free physical = 2704 ; free virtual = 30629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2751.016 ; gain = 750.820 ; free physical = 2704 ; free virtual = 30629
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.1 . Memory (MB): peak = 2751.016 ; gain = 0.000 ; free physical = 2711 ; free virtual = 30637
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.gen/sources_1/ip/rom_diagrom/rom_diagrom/rom_diagrom_in_context.xdc] for cell 'inst_rom'
+Finished Parsing XDC File [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.gen/sources_1/ip/rom_diagrom/rom_diagrom/rom_diagrom_in_context.xdc] for cell 'inst_rom'
+Parsing XDC File [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'inst_clocks'
+Finished Parsing XDC File [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'inst_clocks'
+Parsing XDC File [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.gen/sources_1/ip/ram_chip/ram_chip/ram_chip_in_context.xdc] for cell 'inst_ram'
+Finished Parsing XDC File [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.gen/sources_1/ip/ram_chip/ram_chip/ram_chip_in_context.xdc] for cell 'inst_ram'
+Parsing XDC File [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/constrs_1/new/phase13.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk_50m' already exists, overwriting the previous clock with the same name. [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/constrs_1/new/phase13.xdc:7]
+Finished Parsing XDC File [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/constrs_1/new/phase13.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/constrs_1/new/phase13.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/phase13_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/phase13_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2829.816 ; gain = 0.000 ; free physical = 2731 ; free virtual = 30656
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  OBUFDS => OBUFDS: 4 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2829.852 ; gain = 0.000 ; free physical = 2730 ; free virtual = 30655
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2829.852 ; gain = 829.656 ; free physical = 2761 ; free virtual = 30687
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg484-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2837.820 ; gain = 837.625 ; free physical = 2761 ; free virtual = 30687
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2837.820 ; gain = 837.625 ; free physical = 2761 ; free virtual = 30687
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6702] IncrSynth : Design change found in an area of the design that prevents previous synthesis information being used, Reverting to default synthesis
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2837.820 ; gain = 837.625 ; free physical = 2772 ; free virtual = 30701
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2837.820 ; gain = 837.625 ; free physical = 2772 ; free virtual = 30701
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'busPhase_reg' in module 'busControl'
+INFO: [Synth 8-802] inferred FSM for state register 'dmaPhase_reg' in module 'busArbiter'
+INFO: [Synth 8-802] inferred FSM for state register 'tState_reg' in module 'fx68k'
+WARNING: [Synth 8-3936] Found unconnected internal register 'bplcon0_reg' and it is trimmed from '16' to '15' bits. [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/imports/ficheros/Amiga_Denise.vhd:127]
+WARNING: [Synth 8-3936] Found unconnected internal register 'wr_data_reg' and it is trimmed from '104' to '72' bits. [/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.srcs/sources_1/new/bus_trace.vhd:285]
+INFO: [Synth 8-802] inferred FSM for state register 'ld_ph_reg' in module 'bus_trace'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bus_trace'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'keyboard_uart'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'sram_state_reg' in module 'floppy_subsystem'
+INFO: [Synth 8-802] inferred FSM for state register 'ld_state_reg' in module 'floppy_subsystem'
+INFO: [Synth 8-802] inferred FSM for state register 'br_state_reg' in module 'floppy_subsystem'
+INFO: [Synth 8-802] inferred FSM for state register 'dma_state_reg' in module 'floppy_subsystem'
+INFO: [Synth 8-802] inferred FSM for state register 'kbd_inj_state_reg' in module 'phase13_top'
+INFO: [Synth 8-802] inferred FSM for state register 'bus_state_reg' in module 'phase13_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  SRESET |                              000 | 00000000000000000000000000000000
+                   SIDLE |                              001 | 00000000000000000000000000000001
+                      S0 |                              010 | 00000000000000000000000000000010
+                      S2 |                              011 | 00000000000000000000000000000011
+                      S4 |                              100 | 00000000000000000000000000000100
+                      S6 |                              101 | 00000000000000000000000000000101
+                SRMC_RES |                              110 | 00000000000000000000000000000110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'busPhase_reg' using encoding 'sequential' in module 'busControl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  DRESET |                              000 | 00000000000000000000000000000000
+                   DIDLE |                              001 | 00000000000000000000000000000001
+                      D1 |                              010 | 00000000000000000000000000000010
+                    D_BR |                              011 | 00000000000000000000000000000011
+                    D_BA |                              100 | 00000000000000000000000000000100
+                      D3 |                              101 | 00000000000000000000000000000110
+                   D_BRA |                              110 | 00000000000000000000000000000101
+                      D2 |                              111 | 00000000000000000000000000000111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'dmaPhase_reg' using encoding 'sequential' in module 'busArbiter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      T0 |                              000 | 00000000000000000000000000000000
+                      T4 |                              001 | 00000000000000000000000000000100
+                      T1 |                              010 | 00000000000000000000000000000001
+                      T2 |                              011 | 00000000000000000000000000000010
+                      T3 |                              100 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tState_reg' using encoding 'sequential' in module 'fx68k'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE5 |                              000 |                              000
+                 iSTATE0 |                              001 |                              001
+                 iSTATE1 |                              010 |                              010
+                 iSTATE2 |                              011 |                              011
+                 iSTATE3 |                              100 |                              100
+                 iSTATE4 |                              101 |                              101
+                  iSTATE |                              110 |                              110
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ld_ph_reg' using encoding 'sequential' in module 'bus_trace'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                                0 |                               00
+                  iSTATE |                                1 |                               10
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bus_trace'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                               00 |                               00
+                 s_start |                               01 |                               01
+                  s_data |                               10 |                               10
+                  s_stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                               00 |                               00
+                 s_start |                               01 |                               01
+                  s_data |                               10 |                               10
+                  s_stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                               00 |                               00
+               s_wait_hi |                               01 |                               01
+               s_wait_lo |                               10 |                               10
+                  s_emit |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'keyboard_uart'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                               00 |                               00
+                 s_start |                               01 |                               01
+                  s_data |                               10 |                               10
+                  s_stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                               00 |                               00
+                 s_start |                               01 |                               01
+                  s_data |                               10 |                               10
+                  s_stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_tx__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 l_magic |                              000 |                              000
+                   l_len |                              001 |                              001
+                  l_data |                              010 |                              010
+                   l_ack |                              011 |                              011
+                  l_done |                              100 |                              100
+               l_timeout |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ld_state_reg' using encoding 'sequential' in module 'floppy_subsystem'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  b_idle |                               00 |                               00
+                  b_read |                               01 |                               01
+                b_stream |                               10 |                               10
+                  b_done |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'br_state_reg' using encoding 'sequential' in module 'floppy_subsystem'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                              001 |                               00
+                 s_setup |                              010 |                               01
+                s_access |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sram_state_reg' using encoding 'one-hot' in module 'floppy_subsystem'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  d_idle |                             0001 |                               00
+                   d_cap |                             0010 |                               01
+                   d_req |                             0100 |                               10
+                  d_wait |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'dma_state_reg' using encoding 'one-hot' in module 'floppy_subsystem'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0010 |                               00
+                 iSTATE0 |                             1000 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             0001 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'bus_state_reg' using encoding 'one-hot' in module 'phase13_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                              001 |                               00
+                 iSTATE1 |                              010 |                               01
+                  iSTATE |                              100 |                               10
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'kbd_inj_state_reg' using encoding 'one-hot' in module 'phase13_top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2837.820 ; gain = 837.625 ; free physical = 2818 ; free virtual = 30746
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : Design change found in an area of the design that prevents previous synthesis information being used
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   2 Input   31 Bit       Adders := 2     
+	   2 Input   24 Bit       Adders := 12    
+	   3 Input   24 Bit       Adders := 6     
+	   2 Input   20 Bit       Adders := 2     
+	   2 Input   19 Bit       Adders := 3     
+	   3 Input   18 Bit       Adders := 4     
+	   2 Input   18 Bit       Adders := 6     
+	   4 Input   17 Bit       Adders := 1     
+	   4 Input   16 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 5     
+	   2 Input   15 Bit       Adders := 2     
+	   2 Input   14 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 6     
+	   3 Input   11 Bit       Adders := 1     
+	   3 Input   10 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 8     
+	   3 Input    9 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 6     
+	   2 Input    8 Bit       Adders := 5     
+	   2 Input    7 Bit       Adders := 6     
+	   3 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 8     
+	   3 Input    5 Bit       Adders := 13    
+	   2 Input    5 Bit       Adders := 8     
+	   2 Input    4 Bit       Adders := 15    
+	   8 Input    4 Bit       Adders := 6     
+	   7 Input    4 Bit       Adders := 3     
+	   2 Input    3 Bit       Adders := 8     
+	   2 Input    2 Bit       Adders := 4     
++---XORs : 
+	   2 Input     16 Bit         XORs := 2     
+	   2 Input      8 Bit         XORs := 2     
+	   3 Input      8 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 60    
+	   3 Input      1 Bit         XORs := 1     
++---Registers : 
+	               72 Bit    Registers := 1     
+	               68 Bit    Registers := 2     
+	               32 Bit    Registers := 11    
+	               31 Bit    Registers := 2     
+	               24 Bit    Registers := 12    
+	               20 Bit    Registers := 2     
+	               19 Bit    Registers := 4     
+	               18 Bit    Registers := 15    
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 117   
+	               15 Bit    Registers := 7     
+	               12 Bit    Registers := 18    
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 15    
+	                9 Bit    Registers := 10    
+	                8 Bit    Registers := 568   
+	                7 Bit    Registers := 7     
+	                6 Bit    Registers := 6     
+	                5 Bit    Registers := 13    
+	                4 Bit    Registers := 30    
+	                3 Bit    Registers := 14    
+	                2 Bit    Registers := 11    
+	                1 Bit    Registers := 234   
++---RAMs : 
+	            1152K Bit	(16384 X 72 bit)          RAMs := 1     
+	              32K Bit	(2048 X 16 bit)          RAMs := 1     
+	              16K Bit	(2048 X 8 bit)          RAMs := 1     
+	               2K Bit	(256 X 8 bit)          RAMs := 2     
+	               28 Bit	(4 X 7 bit)          RAMs := 1     
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	   2 Input  288 Bit        Muxes := 2     
+	 337 Input   68 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 15    
+	   9 Input   32 Bit        Muxes := 1     
+	   6 Input   32 Bit        Muxes := 3     
+	  11 Input   32 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 9     
+	   6 Input   31 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 50    
+	   4 Input   24 Bit        Muxes := 1     
+	  16 Input   24 Bit        Muxes := 2     
+	  11 Input   24 Bit        Muxes := 4     
+	   3 Input   20 Bit        Muxes := 1     
+	   6 Input   19 Bit        Muxes := 1     
+	   2 Input   19 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 33    
+	   8 Input   18 Bit        Muxes := 8     
+	   3 Input   18 Bit        Muxes := 1     
+	  11 Input   18 Bit        Muxes := 1     
+	  13 Input   18 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 3     
+	   3 Input   17 Bit        Muxes := 1     
+	   8 Input   16 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 137   
+	   7 Input   16 Bit        Muxes := 1     
+	   4 Input   16 Bit        Muxes := 4     
+	   5 Input   16 Bit        Muxes := 1     
+	   6 Input   16 Bit        Muxes := 2     
+	  18 Input   16 Bit        Muxes := 4     
+	  21 Input   16 Bit        Muxes := 2     
+	  11 Input   16 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 1     
+	   2 Input   15 Bit        Muxes := 14    
+	   8 Input   15 Bit        Muxes := 1     
+	   3 Input   15 Bit        Muxes := 1     
+	   5 Input   15 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 1     
+	   8 Input   12 Bit        Muxes := 1     
+	   4 Input   12 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 34    
+	   4 Input   10 Bit        Muxes := 5     
+	  13 Input   10 Bit        Muxes := 39    
+	   3 Input   10 Bit        Muxes := 1     
+	  10 Input   10 Bit        Muxes := 1     
+	   6 Input   10 Bit        Muxes := 2     
+	   5 Input   10 Bit        Muxes := 5     
+	   7 Input   10 Bit        Muxes := 2     
+	   8 Input   10 Bit        Muxes := 2     
+	  21 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 7     
+	   6 Input    9 Bit        Muxes := 1     
+	  11 Input    9 Bit        Muxes := 1     
+	   4 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 74    
+	  11 Input    8 Bit        Muxes := 7     
+	   4 Input    8 Bit        Muxes := 1     
+	   6 Input    8 Bit        Muxes := 1     
+	  16 Input    8 Bit        Muxes := 10    
+	   7 Input    8 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 37    
+	  16 Input    7 Bit        Muxes := 4     
+	   4 Input    7 Bit        Muxes := 1     
+	   5 Input    7 Bit        Muxes := 1     
+	  12 Input    7 Bit        Muxes := 1     
+	   7 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 9     
+	   3 Input    6 Bit        Muxes := 1     
+	  21 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 29    
+	  15 Input    5 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 11    
+	   5 Input    5 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 2     
+	   7 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 53    
+	   4 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 1     
+	  11 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 105   
+	   7 Input    3 Bit        Muxes := 4     
+	   3 Input    3 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 7     
+	   8 Input    3 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 41    
+	   3 Input    2 Bit        Muxes := 7     
+	   4 Input    2 Bit        Muxes := 11    
+	   6 Input    2 Bit        Muxes := 1     
+	  11 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 517   
+	   5 Input    1 Bit        Muxes := 3     
+	   8 Input    1 Bit        Muxes := 5     
+	   3 Input    1 Bit        Muxes := 33    
+	   7 Input    1 Bit        Muxes := 7     
+	   6 Input    1 Bit        Muxes := 25    
+	   4 Input    1 Bit        Muxes := 59    
+	  13 Input    1 Bit        Muxes := 26    
+	   9 Input    1 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 8     
+	  14 Input    1 Bit        Muxes := 1     
+	  11 Input    1 Bit        Muxes := 34    
+	  16 Input    1 Bit        Muxes := 26    
+	  21 Input    1 Bit        Muxes := 22    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'nanoOutput_reg[2]' (FD) to 'nanoOutput_reg[23]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nanoOutput_reg[23] )
+INFO: [Synth 8-5544] ROM "bitMap" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rowDecoder/row" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "irdDecode/irdLines/bitMap" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-3917] design fx68k__GB1 has port O7[4] driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'excUnit/alu/ccrMask_reg[0]' (FDE) to 'excUnit/alu/ccrMask_reg[1]'
+INFO: [Synth 8-5546] ROM "arA15" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "plaA35" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "arA15" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "plaA35" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "arA23" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "plaA34" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uaddrDecode/irLineDecod/bitMap" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-3886] merging instance 'microAddr_reg[0]' (FDRE) to 'nanoAddr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'microAddr_reg[1]' (FDSE) to 'nanoAddr_reg[1]'
+INFO: [Synth 8-5544] ROM "ld_tx_data0_in1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-3886] merging instance 'ld_tx_data_reg[7]' (FDCE) to 'ld_tx_data_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ld_tx_data_reg[5] )
+INFO: [Synth 8-3886] merging instance 'inst_floppy/_sel_del_reg[1]' (FDE) to 'inst_floppy/_sel_del_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst_floppy/_sel_del_reg[2]' (FDE) to 'inst_floppy/_sel_del_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst_floppy/\_sel_del_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_floppy/\cpu_wr_state_reg[3] )
+INFO: [Synth 8-3886] merging instance 'inst_floppy/fd_dma_csum_reg[0][7]' (FDE) to 'inst_floppy/fd_dma_csum_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'inst_floppy/fd_dma_csum_reg[1][7]' (FDE) to 'inst_floppy/fd_dma_csum_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'inst_floppy/fd_dma_csum_reg[2][7]' (FDE) to 'inst_floppy/fd_dma_csum_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'inst_floppy/fd_dma_csum_reg[0][3]' (FDE) to 'inst_floppy/fd_dma_csum_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'inst_floppy/fd_dma_csum_reg[1][3]' (FDE) to 'inst_floppy/fd_dma_csum_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'inst_floppy/fd_dma_csum_reg[2][3]' (FDE) to 'inst_floppy/fd_dma_csum_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'inst_floppy/fd_dma_csum_reg[0][5]' (FDE) to 'inst_floppy/fd_dma_csum_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst_floppy/fd_dma_csum_reg[1][5]' (FDE) to 'inst_floppy/fd_dma_csum_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'inst_floppy/fd_dma_csum_reg[2][5]' (FDE) to 'inst_floppy/fd_dma_csum_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'inst_floppy/fd_dma_csum_reg[3][1]' (FDE) to 'inst_floppy/fd_dma_csum_reg[3][7]'
+INFO: [Synth 8-3886] merging instance 'inst_floppy/fd_dma_csum_reg[3][3]' (FDE) to 'inst_floppy/fd_dma_csum_reg[3][7]'
+INFO: [Synth 8-3886] merging instance 'inst_floppy/fd_dma_csum_reg[3][5]' (FDE) to 'inst_floppy/fd_dma_csum_reg[3][7]'
+INFO: [Synth 8-3886] merging instance 'inst_floppy/motor_on_reg[1]' (FDRE) to 'inst_floppy/motor_on_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst_floppy/disk_present_reg[1]' (FDE) to 'inst_floppy/disk_present_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst_floppy/motor_on_reg[2]' (FDRE) to 'inst_floppy/motor_on_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst_floppy/disk_present_reg[2]' (FDE) to 'inst_floppy/disk_present_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_floppy/\motor_on_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_floppy/\disk_present_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst_floppy/\drives_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_floppy/\drives_reg[1] )
+INFO: [Synth 8-3886] merging instance 'u_tx/shreg_reg[7]' (FDCE) to 'u_tx/shreg_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_tx/\shreg_reg[5] )
+INFO: [Synth 8-5546] ROM "ddfstrt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ddfstop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bplcon0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "diwstrt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "diwstop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bpl1mod" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bpl2mod" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bpl1ptl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ddfstrt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ddfstop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bplcon0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "diwstrt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "diwstop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bpl1mod" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bpl2mod" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bpl1ptl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "O290" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "O350" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "O360" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "O370" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "O380" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5587] ROM size for "sc" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "sc" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "s" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5587] ROM size for "sc" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "s" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4652] Swapped enable and write-enable on 36 RAM instances of RAM ram_reg to conserve power
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst_trace/\tx_shreg_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_trace/\tx_byte_reg[7] )
+INFO: [Synth 8-3886] merging instance 'inst_trace/wr_data_reg[7]' (FDE) to 'inst_trace/wr_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst_trace/wr_data_reg[6]' (FDE) to 'inst_trace/wr_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst_trace/wr_data_reg[5]' (FDE) to 'inst_trace/wr_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst_trace/wr_data_reg[4]' (FDE) to 'inst_trace/wr_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst_trace/wr_data_reg[3]' (FDE) to 'inst_trace/wr_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst_trace/wr_data_reg[2]' (FDE) to 'inst_trace/wr_data_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_trace/\wr_data_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst_trace/rd_idx_reg_rep[0]' (FDCE) to 'inst_trace/rd_idx_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst_trace/rd_idx_reg_rep[1]' (FDCE) to 'inst_trace/rd_idx_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst_trace/rd_idx_reg_rep[2]' (FDCE) to 'inst_trace/rd_idx_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst_trace/rd_idx_reg_rep[3]' (FDCE) to 'inst_trace/rd_idx_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst_trace/rd_idx_reg_rep[4]' (FDCE) to 'inst_trace/rd_idx_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst_trace/rd_idx_reg_rep[5]' (FDCE) to 'inst_trace/rd_idx_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst_trace/rd_idx_reg_rep[6]' (FDCE) to 'inst_trace/rd_idx_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst_trace/rd_idx_reg_rep[7]' (FDCE) to 'inst_trace/rd_idx_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst_trace/rd_idx_reg_rep[8]' (FDCE) to 'inst_trace/rd_idx_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst_trace/rd_idx_reg_rep[9]' (FDCE) to 'inst_trace/rd_idx_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst_trace/rd_idx_reg_rep[10]' (FDCE) to 'inst_trace/rd_idx_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst_trace/rd_idx_reg_rep[11]' (FDCE) to 'inst_trace/rd_idx_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst_trace/rd_idx_reg_rep[12]' (FDCE) to 'inst_trace/rd_idx_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst_trace/rd_idx_reg_rep[13]' (FDCE) to 'inst_trace/rd_idx_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_trace/\FSM_sequential_ld_ph_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_blitter/\bltdmod_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_blitter/\bltcmod_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_blitter/\bltbmod_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_blitter/\bltamod_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_trace/\FSM_sequential_ld_ph_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_trace/\ld_idx_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_trace/\FSM_sequential_ld_ph_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_trace/\ld_idx_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_trace/\ram_addr_o_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_trace/\ld_idx_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst_trace/ram_addr_o_reg[1]' (FDE) to 'inst_trace/ram_addr_o_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_trace/\ld_idx_reg[2] )
+INFO: [Synth 8-3886] merging instance 'inst_trace/ram_addr_o_reg[2]' (FDE) to 'inst_trace/ram_addr_o_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_trace/\ld_idx_reg[3] )
+INFO: [Synth 8-3886] merging instance 'inst_trace/ram_addr_o_reg[3]' (FDE) to 'inst_trace/ram_addr_o_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_trace/\ld_idx_reg[4] )
+INFO: [Synth 8-3886] merging instance 'inst_trace/ram_addr_o_reg[4]' (FDE) to 'inst_trace/ram_addr_o_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_trace/\ld_idx_reg[5] )
+INFO: [Synth 8-3886] merging instance 'inst_trace/ram_addr_o_reg[5]' (FDE) to 'inst_trace/ram_addr_o_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_trace/\ld_idx_reg[6] )
+INFO: [Synth 8-3886] merging instance 'inst_trace/ram_addr_o_reg[6]' (FDE) to 'inst_trace/ram_addr_o_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_trace/\ld_idx_reg[7] )
+INFO: [Synth 8-3886] merging instance 'inst_trace/ram_addr_o_reg[7]' (FDE) to 'inst_trace/ram_addr_o_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_trace/\ld_idx_reg[8] )
+INFO: [Synth 8-3886] merging instance 'inst_trace/ram_addr_o_reg[8]' (FDE) to 'inst_trace/ram_addr_o_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_trace/\ld_idx_reg[9] )
+INFO: [Synth 8-3886] merging instance 'inst_trace/ram_addr_o_reg[9]' (FDE) to 'inst_trace/ram_addr_o_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_trace/\ld_idx_reg[10] )
+INFO: [Synth 8-3886] merging instance 'inst_trace/ram_addr_o_reg[10]' (FDE) to 'inst_trace/ram_addr_o_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_trace/\ld_idx_reg[11] )
+INFO: [Synth 8-3886] merging instance 'inst_trace/ram_addr_o_reg[11]' (FDE) to 'inst_trace/ram_addr_o_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_trace/\ld_idx_reg[12] )
+INFO: [Synth 8-3886] merging instance 'inst_trace/ram_addr_o_reg[12]' (FDE) to 'inst_trace/ram_addr_o_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_trace/\ld_idx_reg[13] )
+INFO: [Synth 8-3886] merging instance 'inst_trace/ram_addr_o_reg[13]' (FDE) to 'inst_trace/ram_addr_o_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_trace/\ld_idx_reg[14] )
+INFO: [Synth 8-3886] merging instance 'inst_trace/ram_addr_o_reg[14]' (FDE) to 'inst_trace/ram_addr_o_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_trace/\ld_idx_reg[15] )
+INFO: [Synth 8-3886] merging instance 'inst_trace/ram_addr_o_reg[15]' (FDE) to 'inst_trace/ram_addr_o_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_trace/\ld_idx_reg[16] )
+INFO: [Synth 8-3886] merging instance 'inst_trace/ram_addr_o_reg[16]' (FDE) to 'inst_trace/ram_addr_o_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_trace/\ld_idx_reg[17] )
+INFO: [Synth 8-3886] merging instance 'inst_trace/ram_addr_o_reg[17]' (FDE) to 'inst_trace/ram_addr_o_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_copper/\reg_addr_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst_denise/blue_reg[0]' (FDR) to 'inst_denise/blue_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst_denise/blue_reg[1]' (FDR) to 'inst_denise/blue_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst_denise/blue_reg[2]' (FDR) to 'inst_denise/blue_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst_denise/blue_reg[3]' (FDR) to 'inst_denise/blue_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst_denise/green_reg[0]' (FDR) to 'inst_denise/green_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst_denise/green_reg[1]' (FDR) to 'inst_denise/green_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst_denise/green_reg[2]' (FDR) to 'inst_denise/green_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst_denise/green_reg[3]' (FDR) to 'inst_denise/green_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst_denise/red_reg[0]' (FDR) to 'inst_denise/red_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst_denise/red_reg[1]' (FDR) to 'inst_denise/red_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst_denise/red_reg[2]' (FDR) to 'inst_denise/red_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst_denise/red_reg[3]' (FDR) to 'inst_denise/red_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst_ciaa/icr_data_reg[2]' (FDCE) to 'inst_ciaa/icr_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst_ciaa/icr_data_reg[4]' (FDCE) to 'inst_ciaa/icr_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst_ciaa/icr_data_reg[6]' (FDCE) to 'inst_ciaa/icr_data_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_ciaa/\icr_data_reg[5] )
+INFO: [Synth 8-3886] merging instance 'inst_ciab/sdr_reg_reg[0]' (FDCE) to 'inst_ciab/sdr_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst_ciab/sdr_reg_reg[1]' (FDCE) to 'inst_ciab/sdr_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst_ciab/sdr_reg_reg[2]' (FDCE) to 'inst_ciab/sdr_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst_ciab/sdr_reg_reg[3]' (FDCE) to 'inst_ciab/sdr_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst_ciab/sdr_reg_reg[4]' (FDCE) to 'inst_ciab/sdr_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst_ciab/sdr_reg_reg[5]' (FDCE) to 'inst_ciab/sdr_reg_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ser_rbf_clear_reg)
+INFO: [Synth 8-3886] merging instance 'inst_ciab/sdr_reg_reg[6]' (FDCE) to 'inst_ciab/sdr_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst_ciab/icr_data_reg[2]' (FDCE) to 'inst_ciab/icr_data_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_ciab/\icr_data_reg[3] )
+INFO: [Synth 8-3886] merging instance 'inst_ciab/icr_data_reg[4]' (FDCE) to 'inst_ciab/icr_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst_ciab/icr_data_reg[6]' (FDCE) to 'inst_ciab/icr_data_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_ciab/\icr_data_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_ciab/\sdr_reg_reg[7] )
+INFO: [Synth 8-3886] merging instance 'inst_blitter/ram_we_w_reg[0]' (FDC) to 'inst_blitter/ram_we_w_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vposr_reg_reg[7]' (FDE) to 'vhposr_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'vposr_reg_reg[6]' (FDE) to 'vhposr_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'vposr_reg_reg[5]' (FDE) to 'vhposr_reg_reg[13]'
+INFO: [Synth 8-3886] merging instance 'vposr_reg_reg[4]' (FDE) to 'vhposr_reg_reg[12]'
+INFO: [Synth 8-3886] merging instance 'vposr_reg_reg[3]' (FDE) to 'vhposr_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'vposr_reg_reg[2]' (FDE) to 'vhposr_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'vposr_reg_reg[1]' (FDE) to 'vhposr_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'vposr_reg_reg[0]' (FDE) to 'vhposr_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'vposr_reg_reg[9]' (FDRE) to 'vposr_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'vposr_reg_reg[10]' (FDRE) to 'vposr_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'vposr_reg_reg[11]' (FDRE) to 'vposr_reg_reg[12]'
+INFO: [Synth 8-3886] merging instance 'vposr_reg_reg[12]' (FDRE) to 'vposr_reg_reg[13]'
+INFO: [Synth 8-3886] merging instance 'vposr_reg_reg[13]' (FDRE) to 'vposr_reg_reg[14]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vposr_reg_reg[15] )
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_ld_ph_reg[2]) is unused and will be removed from module bus_trace.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_ld_ph_reg[1]) is unused and will be removed from module bus_trace.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_ld_ph_reg[0]) is unused and will be removed from module bus_trace.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:44 . Memory (MB): peak = 2865.754 ; gain = 865.559 ; free physical = 311 ; free virtual = 26173
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++----------------+------------+---------------+----------------+
+|Module Name     | RTL Object | Depth x Width | Implemented As | 
++----------------+------------+---------------+----------------+
+|microToNanoAddr | orgBase    | 256x7         | LUT            | 
++----------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst_trace  | ram_reg    | 16 K x 72(READ_FIRST)  | W |   | 16 K x 72(WRITE_FIRST) |   | R | Port A and B     | 0      | 36     | 
+|inst_serdat | fifo_reg   | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+---------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives    | 
++------------+---------------------+-----------+----------------------+---------------+
+|inst_floppy | db1/mem_reg         | Implied   | 2 K x 16             | RAM64M x 192  | 
+|inst_floppy | dsktrack_reg        | Implied   | 4 x 7                | RAM16X1S x 7  | 
+|inst_floppy | fd_dma_buf_even_reg | Implied   | 256 x 8              | RAM64M x 36   | 
+|inst_floppy | fd_dma_buf_odd_reg  | Implied   | 256 x 8              | RAM64M x 36   | 
++------------+---------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'clk_50m'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:49 . Memory (MB): peak = 2923.832 ; gain = 923.637 ; free physical = 270 ; free virtual = 25491
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:50 . Memory (MB): peak = 2947.848 ; gain = 947.652 ; free physical = 259 ; free virtual = 25481
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst_trace  | ram_reg    | 16 K x 72(READ_FIRST)  | W |   | 16 K x 72(WRITE_FIRST) |   | R | Port A and B     | 0      | 36     | 
+|inst_serdat | fifo_reg   | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++------------+---------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives    | 
++------------+---------------------+-----------+----------------------+---------------+
+|inst_floppy | db1/mem_reg         | Implied   | 2 K x 16             | RAM64M x 192  | 
+|inst_floppy | dsktrack_reg        | Implied   | 4 x 7                | RAM16X1S x 7  | 
+|inst_floppy | fd_dma_buf_even_reg | Implied   | 256 x 8              | RAM64M x 36   | 
+|inst_floppy | fd_dma_buf_odd_reg  | Implied   | 256 x 8              | RAM64M x 36   | 
++------------+---------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance cpu_corei_2/uRom/microOutput_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+WARNING: [Synth 8-565] redefining clock 'clk_50m'
+WARNING: [Synth 8-565] redefining clock 'clk_50m'
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_16 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_17 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_18 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_19 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_20 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_21 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_22 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_23 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_24 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_25 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_26 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_27 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_28 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_29 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_30 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_31 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_32 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_33 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_34 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_trace/ram_reg_35 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/inst_serdat/fifo_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:55 . Memory (MB): peak = 3000.820 ; gain = 1000.625 ; free physical = 256 ; free virtual = 25001
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_16 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_17 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_18 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_19 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_20 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_21 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_22 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_23 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_24 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_25 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_26 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_27 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_28 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_29 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_30 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_31 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_32 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_33 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_34 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_trace/ram_reg_35 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_cpu/cpu_core/uRom/microOutput_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst_serdat/fifo_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:57 . Memory (MB): peak = 3125.492 ; gain = 1125.297 ; free physical = 265 ; free virtual = 24923
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:57 . Memory (MB): peak = 3125.492 ; gain = 1125.297 ; free physical = 265 ; free virtual = 24923
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:58 . Memory (MB): peak = 3125.492 ; gain = 1125.297 ; free physical = 255 ; free virtual = 24914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:58 . Memory (MB): peak = 3125.492 ; gain = 1125.297 ; free physical = 256 ; free virtual = 24915
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:59 . Memory (MB): peak = 3146.305 ; gain = 1146.109 ; free physical = 256 ; free virtual = 24915
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:59 . Memory (MB): peak = 3146.305 ; gain = 1146.109 ; free physical = 256 ; free virtual = 24915
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |rom_diagrom   |         1|
+|2     |ram_chip      |         1|
+|3     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |clk_wiz     |     1|
+|2     |ram_chip    |     1|
+|3     |rom_diagrom |     1|
+|4     |CARRY4      |   356|
+|5     |LUT1        |   259|
+|6     |LUT2        |   608|
+|7     |LUT3        |  1553|
+|8     |LUT4        |  1700|
+|9     |LUT5        |  2942|
+|10    |LUT6        |  5303|
+|11    |MUXF7       |   883|
+|12    |MUXF8       |   349|
+|13    |ODDR        |     4|
+|14    |RAM16X1S    |     7|
+|15    |RAM64M      |   232|
+|16    |RAM64X1D    |    32|
+|17    |RAMB18E1    |     2|
+|19    |RAMB36E1    |    33|
+|20    |FDCE        |  1655|
+|21    |FDPE        |   228|
+|22    |FDRE        |  6888|
+|23    |FDSE        |    43|
+|24    |IBUF        |     1|
+|25    |IOBUF       |    16|
+|26    |OBUF        |    26|
+|27    |OBUFDS      |     4|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:59 . Memory (MB): peak = 3146.305 ; gain = 1146.109 ; free physical = 256 ; free virtual = 24915
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 215 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:00:58 . Memory (MB): peak = 3150.219 ; gain = 1071.188 ; free physical = 5756 ; free virtual = 30416
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:01:01 . Memory (MB): peak = 3150.219 ; gain = 1150.023 ; free physical = 5812 ; free virtual = 30463
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3150.219 ; gain = 0.000 ; free physical = 5862 ; free virtual = 30513
+INFO: [Netlist 29-17] Analyzing 1918 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3194.328 ; gain = 0.000 ; free physical = 4710 ; free virtual = 29362
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 291 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 4 instances
+  RAM16X1S => RAM32X1S (RAMS32): 7 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 232 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 32 instances
+
+Synth Design complete | Checksum: 14849d6f
+INFO: [Common 17-83] Releasing license: Synthesis
+519 Infos, 149 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:01:05 . Memory (MB): peak = 3194.363 ; gain = 1341.348 ; free physical = 4813 ; free virtual = 29462
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 7497.416; main = 2043.870; forked = 5830.976
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 17965.574; main = 3194.332; forked = 15103.734
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3218.340 ; gain = 0.000 ; free physical = 4801 ; free virtual = 29453
+INFO: [Common 17-1381] The checkpoint '/home/luis/DeepSeek/Amiga500V2/fase_13/fase_13.runs/synth_1/phase13_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file phase13_top_utilization_synth.rpt -pb phase13_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  2 21:12:07 2026...
